@@ -1,0 +1,11 @@
+.head{
+    /* background-image: url('https://wallpaperaccess.com/full/30100.jpg'); */
+    background-image:radial-gradient(at top left,#629a92 36%,#02d2a0 67%, transparent 67.5%);
+    background-size:120% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    margin-top: 30px;
+    padding-top: 200px;
+    padding-left: 500px;
+}

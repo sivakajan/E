@@ -1,0 +1,22 @@
+
+
+    
+  <nav class="py-2 bg-light border-bottom">
+    <div class="container d-flex flex-wrap">
+      <ul class="nav me-auto">
+        <li class="nav-item"><a routerLink="/pro" class="nav-link link-dark px-2 active" aria-current="page">Home</a></li>
+       
+       
+      </ul>
+      <ul class="nav">
+        <li class="nav-item"><a routerLink="/check" *ngIf="om.getone()" class="nav-link link-dark px-2">
+          <i class="fa" style="font-size:24px">&#xf07a;</i>
+          <span class='badge badge-warning' id='lblCartCount'>{{om.getmyine()}}</span> 
+        </a></li>
+        <li class="nav-item"><a routerLink="/log" *ngIf="!om.getone()" class="nav-link link-dark px-2">Login</a></li>
+        <li class="nav-item"><a routerLink="/reg"  *ngIf="!om.getone()" class="nav-link link-dark px-2">Sign up</a></li>
+        <li class="nav-item"><a routerLink="/lo" *ngIf="om.getone()" (click)="om.logout()" class="nav-link link-dark px-2">logout</a></li>
+      </ul>
+    </div>
+  </nav>
+

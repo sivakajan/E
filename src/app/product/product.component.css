@@ -1,0 +1,17 @@
+li{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+}
+
+li a:hover{
+    cursor: pointer;
+}
+
+/* .prod{
+    
+} */
+
+

@@ -1,0 +1,56 @@
+<app-header></app-header>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-2 ">
+            <ul class="mt-4" *ngFor="let cats of cata">
+                <li><a (click)="catagory(cats.id)" >{{cats.name}}</a></li>
+            </ul>
+        </div>
+        <div class="col-10">
+            <div class="tra-pro">
+                <h1>Top Product</h1>
+            </div>
+
+            <div class="row">
+
+                <div *ngFor="let data of datas" class="col-3 m-2 card">
+                    <div class="card-body">
+                    <h5>{{data.name}}</h5>
+                    <p>{{data.catogerys.name}}</p>
+                    <i>${{data.price}}</i><br>
+                    <a (click)="addTocart(data.id,data.name,data.price,data.catogerys.name)" type="button" class="ml-1 btn btn-primary so">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            
+      </div>
+</div>
+   
+    <!-- <div class="row po">
+        <div class="col-3">
+            <ul *ngFor="let cats of cata">
+                <li><a (click)="catagory(cats.id)" >{{cats.name}}</a></li>
+            </ul>
+        </div> -->
+
+        <!-- <div class="col-9"> -->
+                <!-- <div class="tra-pro">
+                    <h1>Top Product</h1>
+                </div> -->
+               
+                <!-- <div class="row">
+
+                    <div *ngFor="let data of datas" class="col-lg-3 m-2 card">
+                        <div class="card-body">
+                        <h5>{{data.name}}</h5>
+                        <p>{{data.catogerys.name}}</p>
+                        <i>${{data.price}}</i><br>
+                        <a (click)="addTocart(data.id,data.name,data.price,data.catogerys.name)" type="button" class="ml-1 btn btn-primary so">Add to cart</a>
+                        </div>
+                    </div>
+                </div> -->
+         <!-- </div>
+    
+
+   </div>
+</div> -->

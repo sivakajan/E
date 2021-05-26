@@ -1,0 +1,49 @@
+<main>
+    <h1 class="visually-hidden">Heroes examples</h1>
+  
+   
+  
+
+  
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+      <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-7 text-center text-lg-start">
+          <img width="650px" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2hvcHBpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80">
+        </div>
+        <div class="col-md-10 mx-auto col-lg-5">
+          <form #signupform="ngForm" class="p-4 p-md-5 border rounded-3 bg-light">
+
+
+            <!-- <div class="alert alert-danger" role="alert">
+              {{msg}}
+            </div>
+             -->
+            <div class="form-floating mb-3">
+              <input type="name" class="form-control" name="name" [(ngModel)]="user.name" id="username" placeholder="name@example.com"
+                
+                
+              >
+              <label for="floatingInput">Email address</label>
+              <!-- <small class="text-danger" [class.d-none]="email.valid || email.untouched">email is required field</small> -->
+              <!-- <div *ngIf="email.errors && (email.invalid && email.touched)">
+                [class.is-invalid]="email.invalid && email.touched"
+                required #email="ngModel"
+                <small calss="text-danger" *ngIf="email.errors.required">email s is reuired field</small>
+                <small calss="text-danger" *ngIf="email.errors.pattern">email is in valid</small>
+              </div> -->
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" name="password" [(ngModel)]="user.password" id="Password" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            
+            <button class="w-100 btn btn-lg btn-primary" type="submit" (click)="signup()">sign UP</button>
+            <hr class="my-4">
+            <p>Are you already signin <a routerLink="/log">Login</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  
+
+  </main>
